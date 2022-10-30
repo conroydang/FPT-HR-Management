@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="541adeba5c8d4e7da3721b956e8bbb3a" Name="Diagram1">
+        <EntityTypeShape EntityType="StaffManagerModel.Course" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StaffManagerModel.CourseCategory" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StaffManagerModel.Role" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StaffManagerModel.Topic" Width="1.5" PointX="7.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StaffManagerModel.Trainee" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StaffManagerModel.Trainer" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StaffManagerModel.TrainingStaff" Width="1.5" PointX="7.5" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StaffManagerModel.User" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <AssociationConnector Association="StaffManagerModel.fk_cate_course" ManuallyRouted="false" />
+        <AssociationConnector Association="StaffManagerModel.fk_course" ManuallyRouted="false" />
+        <AssociationConnector Association="StaffManagerModel.fk_course_topic" ManuallyRouted="false" />
+        <AssociationConnector Association="StaffManagerModel.fk_role_user" ManuallyRouted="false" />
+        <AssociationConnector Association="StaffManagerModel.fk_id_user" ManuallyRouted="false" />
+        <AssociationConnector Association="StaffManagerModel.fk_trainee" ManuallyRouted="false" />
+        <AssociationConnector Association="StaffManagerModel.fk_trainer" ManuallyRouted="false" />
+        <AssociationConnector Association="StaffManagerModel.fk_trainer_user" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

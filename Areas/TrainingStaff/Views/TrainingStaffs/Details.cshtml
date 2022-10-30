@@ -1,0 +1,59 @@
+﻿@model StaffManager.Models.TrainingStaff
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/TrainingStaff/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TrainingStaff</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trainee.Note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trainee.Note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trainer.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trainer.Id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

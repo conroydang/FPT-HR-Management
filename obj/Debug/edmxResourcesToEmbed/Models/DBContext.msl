@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StaffManagerModelStoreContainer" CdmEntityContainer="DBContext">
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="StaffManagerModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseCategories">
+      <EntityTypeMapping TypeName="StaffManagerModel.CourseCategory">
+        <MappingFragment StoreEntitySet="CourseCategories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="StaffManagerModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Topics">
+      <EntityTypeMapping TypeName="StaffManagerModel.Topic">
+        <MappingFragment StoreEntitySet="Topic">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Field" ColumnName="Field" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trainees">
+      <EntityTypeMapping TypeName="StaffManagerModel.Trainee">
+        <MappingFragment StoreEntitySet="Trainee">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trainers">
+      <EntityTypeMapping TypeName="StaffManagerModel.Trainer">
+        <MappingFragment StoreEntitySet="Trainer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrainingStaffs">
+      <EntityTypeMapping TypeName="StaffManagerModel.TrainingStaff">
+        <MappingFragment StoreEntitySet="TrainingStaff">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdTrainee" ColumnName="IdTrainee" />
+          <ScalarProperty Name="IdTrainer" ColumnName="IdTrainer" />
+          <ScalarProperty Name="IdCourse" ColumnName="IdCourse" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="StaffManagerModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Dob" ColumnName="Dob" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetCategories" FunctionName="StaffManagerModel.Store.GetCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetCategories_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCategoryById" FunctionName="StaffManagerModel.Store.GetCategoryById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetCategoryById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCourseById" FunctionName="StaffManagerModel.Store.GetCourseById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetCourseById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Course_Name" ColumnName="Course Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="Course_Category" ColumnName="Course Category" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCourses" FunctionName="StaffManagerModel.Store.GetCourses">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetCourses_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Course_Name" ColumnName="Course Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="Course_Category" ColumnName="Course Category" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetRoleById" FunctionName="StaffManagerModel.Store.GetRoleById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetRoleById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetRoles" FunctionName="StaffManagerModel.Store.GetRoles">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetRoles_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTopicByCourse" FunctionName="StaffManagerModel.Store.GetTopicByCourse">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetTopicByCourse_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name_Topic" ColumnName="Name Topic" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Field" ColumnName="Field" />
+          <ScalarProperty Name="Course_Name" ColumnName="Course Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTopicById" FunctionName="StaffManagerModel.Store.GetTopicById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetTopicById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name_Topic" ColumnName="Name Topic" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Field" ColumnName="Field" />
+          <ScalarProperty Name="Course_Name" ColumnName="Course Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTraineeById" FunctionName="StaffManagerModel.Store.GetTraineeById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetTraineeById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTrainees" FunctionName="StaffManagerModel.Store.GetTrainees">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetTrainees_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTrainerById" FunctionName="StaffManagerModel.Store.GetTrainerById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetTrainerById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTraineres" FunctionName="StaffManagerModel.Store.GetTraineres">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetTraineres_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTrainingStaff" FunctionName="StaffManagerModel.Store.GetTrainingStaff">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetTrainingStaff_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Training_Staff_Name" ColumnName="Training Staff Name" />
+          <ScalarProperty Name="ID_Trainee" ColumnName="ID Trainee" />
+          <ScalarProperty Name="ID_Trainer" ColumnName="ID Trainer" />
+          <ScalarProperty Name="Course_Name" ColumnName="Course Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTrainingStaffes" FunctionName="StaffManagerModel.Store.GetTrainingStaffes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetTrainingStaffes_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Training_Staff_Name" ColumnName="Training Staff Name" />
+          <ScalarProperty Name="ID_Trainee" ColumnName="ID Trainee" />
+          <ScalarProperty Name="ID_Trainer" ColumnName="ID Trainer" />
+          <ScalarProperty Name="Course_Name" ColumnName="Course Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUserById" FunctionName="StaffManagerModel.Store.GetUserById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetUserById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Dob" ColumnName="Dob" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUsers" FunctionName="StaffManagerModel.Store.GetUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.GetUsers_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Dob" ColumnName="Dob" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Login" FunctionName="StaffManagerModel.Store.Login">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StaffManagerModel.Login_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Dob" ColumnName="Dob" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
