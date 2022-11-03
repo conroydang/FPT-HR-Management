@@ -50,7 +50,7 @@ namespace StaffManager.Controllers
                 }
                 else
                 {
-                    ViewBag.ERROR = "Tài khoản hoặc mật khẩu không chính xác";
+                    ViewBag.ERROR = "Email or Password wrong, please check again !";
                     return View();
                 }
             }

@@ -238,10 +238,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\assets\css\bootstrap.min.css" />
     <Content Include="Content\assets\css\material-dashboard.css" />
     <Content Include="Content\assets\css\material-dashboard.min.css" />
     <Content Include="Content\assets\css\nucleo-icons.css" />
     <Content Include="Content\assets\css\nucleo-svg.css" />
+    <Content Include="Content\assets\css\style.css" />
     <Content Include="Content\assets\fonts\nucleo-icons.svg" />
     <Content Include="Content\assets\img\apple-icon.png" />
     <Content Include="Content\assets\img\bg-pricing.jpg" />
@@ -331,6 +333,7 @@
     <Content Include="Content\assets\js\core\bootstrap.bundle.min.js" />
     <Content Include="Content\assets\js\core\bootstrap.min.js" />
     <Content Include="Content\assets\js\core\popper.min.js" />
+    <Content Include="Content\assets\js\main.js" />
     <Content Include="Content\assets\js\material-dashboard.js" />
     <Content Include="Content\assets\js\material-dashboard.min.js" />
     <Content Include="Content\assets\js\plugins\bootstrap-notify.js" />
@@ -339,6 +342,26 @@
     <Content Include="Content\assets\js\plugins\perfect-scrollbar.min.js" />
     <Content Include="Content\assets\js\plugins\smooth-scrollbar.min.js" />
     <Content Include="Content\assets\js\plugins\world.js" />
+    <Content Include="Content\assets\lib\chart\chart.min.js" />
+    <Content Include="Content\assets\lib\easing\easing.js" />
+    <Content Include="Content\assets\lib\easing\easing.min.js" />
+    <Content Include="Content\assets\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Content\assets\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Content\assets\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Content\assets\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Content\assets\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Content\assets\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Content\assets\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Content\assets\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Content\assets\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="Content\assets\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Content\assets\lib\tempusdominus\css\tempusdominus-bootstrap-4.css" />
+    <Content Include="Content\assets\lib\tempusdominus\css\tempusdominus-bootstrap-4.min.css" />
+    <Content Include="Content\assets\lib\tempusdominus\js\moment-timezone.min.js" />
+    <Content Include="Content\assets\lib\tempusdominus\js\moment.min.js" />
+    <Content Include="Content\assets\lib\tempusdominus\js\tempusdominus-bootstrap-4.js" />
+    <Content Include="Content\assets\lib\tempusdominus\js\tempusdominus-bootstrap-4.min.js" />
+    <Content Include="Content\assets\lib\waypoints\waypoints.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -596,6 +619,8 @@
     <Content Include="Areas\Trainer\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Trainer\Views\Courses\Index.cshtml" />
     <Content Include="Areas\Trainer\Views\Users\Edit.cshtml" />
+    <Content Include="Content\assets\lib\owlcarousel\LICENSE" />
+    <Content Include="Content\assets\lib\waypoints\links.php" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
